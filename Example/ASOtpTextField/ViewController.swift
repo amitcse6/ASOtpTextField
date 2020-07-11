@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import ASOtpTextField
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var otpField: ASOtpTextFieldViewClassic!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        otpField.backgroundColor = .clear
+        otpField.setField(5)
     }
 
     override func didReceiveMemoryWarning() {

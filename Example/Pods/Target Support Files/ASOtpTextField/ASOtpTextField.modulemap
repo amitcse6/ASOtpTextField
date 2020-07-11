@@ -1,0 +1,6 @@
+framework module ASOtpTextField {
+  umbrella header "ASOtpTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}
