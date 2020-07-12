@@ -104,7 +104,7 @@ extension ASOtpTextFieldView: UITextFieldDelegate {
 }
 
 extension ASOtpTextFieldView {
-    func getTextArray() -> [String] {
+    public func getTextArray() -> [String] {
         return textFields?.map({ $0.getText() }) ?? []
     }
     
@@ -117,32 +117,32 @@ extension ASOtpTextFieldView {
     }
     
     @discardableResult
-    func setBecomeFirstResponder(_ index: Int) -> ASOtpTextFieldView {
+    public func setBecomeFirstResponder(_ index: Int) -> ASOtpTextFieldView {
         goNextField(selectedTextField: nil)
         return self
     }
     
     @discardableResult
-    func setBordeColor(_ borderColor: UIColor) -> ASOtpTextFieldView {
+    public func setBordeColor(_ borderColor: UIColor) -> ASOtpTextFieldView {
         container?.layer.borderColor = borderColor.cgColor
         return self
     }
     
     @discardableResult
-    func setBordeWidth(_ borderWidth: CGFloat) -> ASOtpTextFieldView {
+    public func setBordeWidth(_ borderWidth: CGFloat) -> ASOtpTextFieldView {
         container?.layer.borderWidth = borderWidth
         return self
     }
     
     @discardableResult
-    func setBackgroundColor(_ backgroundColor: UIColor) -> ASOtpTextFieldView {
+    public func setBackgroundColor(_ backgroundColor: UIColor) -> ASOtpTextFieldView {
         self.backgroundColor = backgroundColor
         container?.backgroundColor = backgroundColor
         return self
     }
     
     @discardableResult
-    func setFieldBackgroundColor(_ backgroundColor: UIColor) -> ASOtpTextFieldView {
+    public func setFieldBackgroundColor(_ backgroundColor: UIColor) -> ASOtpTextFieldView {
         textFields?.forEach({ $0.setBackgroundColor(backgroundColor) })
         return self
     }
