@@ -31,6 +31,8 @@ public class ASOtpTextFieldClassic: ASOtpTextField {
     }
     
     public func setupUIElements() {
+        backgroundColor = .clear
+        
         container = UIView()
         addSubview(self.container.unsafelyUnwrapped)
         container?.layer.rasterizationScale = UIScreen.main.scale

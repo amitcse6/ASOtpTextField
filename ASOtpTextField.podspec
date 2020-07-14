@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ASOtpTextField'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'ASOtpTextField for OTP Input Field'
 
 # This description is used to generate tags and improve search results.

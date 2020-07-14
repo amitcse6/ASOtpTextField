@@ -31,6 +31,8 @@ public class ASOtpTextFieldViewClassic: ASOtpTextFieldView {
     }
     
     public func setupUIElements() {
+        backgroundColor = .clear
+        
         container = UIView()
         addSubview(self.container.unsafelyUnwrapped)
         container?.clipsToBounds = true

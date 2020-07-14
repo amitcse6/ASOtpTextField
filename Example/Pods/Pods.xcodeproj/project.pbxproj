@@ -208,12 +208,12 @@
 		282243B824BA30C900EAA5BF /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				282243B924BA30C900EAA5BF /* ASOtpField.swift */,
-				282243BA24BA30C900EAA5BF /* ASOtpTextFieldClassic.swift */,
-				282243BB24BA30C900EAA5BF /* ASOtpTextFieldView.swift */,
-				282243BC24BA30C900EAA5BF /* ASOtpTextField+Extensions.swift */,
-				282243BD24BA30C900EAA5BF /* ASOtpTextFieldViewClassic.swift */,
 				282243BE24BA30C900EAA5BF /* ASOtpTextFieldView+Extensions.swift */,
+				282243BB24BA30C900EAA5BF /* ASOtpTextFieldView.swift */,
+				282243BA24BA30C900EAA5BF /* ASOtpTextFieldClassic.swift */,
+				282243B924BA30C900EAA5BF /* ASOtpField.swift */,
+				282243BD24BA30C900EAA5BF /* ASOtpTextFieldViewClassic.swift */,
+				282243BC24BA30C900EAA5BF /* ASOtpTextField+Extensions.swift */,
 				282243BF24BA30C900EAA5BF /* ASOtpTextField.swift */,
 			);
 			path = Source;
