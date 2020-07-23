@@ -5,7 +5,36 @@
 [![License](https://img.shields.io/cocoapods/l/ASOtpTextField.svg?style=flat)](https://cocoapods.org/pods/ASOtpTextField)
 [![Platform](https://img.shields.io/cocoapods/p/ASOtpTextField.svg?style=flat)](https://cocoapods.org/pods/ASOtpTextField)
 
+Screenshots
+---------
+![ASOtpTextField Screenshots](asotptextfield_screenshot.gif)
+
 ## Example
+
+```swift
+import ASOtpTextField
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var otpField: ASOtpTextFieldViewClassic!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        otpField
+            .setField(6)
+            .setInputBoxStyle(.box)
+    }
+    
+    @IBAction func submitEventHandler(_ sender: Any) {
+        let otpArray = otpField?.getTextArray()
+        let otp = otpArray?.joined(separator: "")
+        print("otp: \(otp ?? "")")
+    }
+}
+
+
+```
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
